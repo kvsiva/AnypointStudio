@@ -1,0 +1,693 @@
+2017-08-08 20:01:31,784 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'filetransferdemo'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:01:32,214 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-08-08 20:01:32,509 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-08-08 20:01:32,775 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-08-08 20:01:32,775 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-08-08 20:01:32,962 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@ca27722: startup date [Tue Aug 08 20:01:32 IST 2017]; root of context hierarchy
+2017-08-08 20:01:35,132 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-08-08 20:01:36,572 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-08-08 20:01:36,905 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-tx-log\tx1.log and C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-tx-log\tx2.log
+2017-08-08 20:01:36,943 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-xa-tx-log\tx1.log and C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-xa-tx-log\tx2.log
+2017-08-08 20:01:36,956 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2017-08-08 20:01:37,198 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-08-08 20:01:37,206 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: filetransferdemoFlow
+2017-08-08 20:01:37,207 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2fd954f
+2017-08-08 20:01:37,235 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: filetransferdemoFlow.stage1
+2017-08-08 20:01:38,511 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\apps\filetransferdemo\filetransferdemo.xml'}]"
+2017-08-08 20:01:38,512 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\apps\filetransferdemo\filetransferdemo.xml'}]"
+2017-08-08 20:01:38,597 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'filetransferdemo'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:01:38,609 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-08-08 20:01:38,609 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-08-08 20:01:38,682 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=42a0501e
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-08-08 20:01:38,682 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=42a0501e
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-08-08 20:01:38,683 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2017-08-08 20:01:38,692 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:01:38,696 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-08-08 20:01:38,699 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: filetransferdemoFlow
+2017-08-08 20:01:38,699 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: filetransferdemoFlow.stage1
+2017-08-08 20:01:38,823 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: filetransferdemoFlow on endpointUri: file:///C:/Java/SamplePrograms/
+2017-08-08 20:01:38,881 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2017-08-08 20:01:38,897 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2017-08-08 20:01:38,901 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2017-08-08 20:01:38,906 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2017-08-08 20:01:38,923 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-08-08 20:01:39,915 [[filetransferdemo].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: C:\Java\SamplePrograms\Hello.class
+2017-08-08 20:01:39,932 [[filetransferdemo].connector.file.mule.default.receiver.01] ERROR org.mule.exception.DefaultSystemExceptionStrategy - Caught exception in Exception Strategy: Unable to create a canonical file for parent: C:\Java\output and child: *.*
+org.mule.api.MuleRuntimeException: Unable to create a canonical file for parent: C:\Java\output and child: *.*
+	at org.mule.util.FileUtils.newFile(FileUtils.java:444) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.file.FileMessageReceiver.processFile(FileMessageReceiver.java:344) ~[mule-transport-file-3.8.5.jar:3.8.5]
+	at org.mule.transport.file.FileMessageReceiver.poll(FileMessageReceiver.java:246) ~[mule-transport-file-3.8.5.jar:3.8.5]
+	at org.mule.transport.AbstractPollingMessageReceiver.performPoll(AbstractPollingMessageReceiver.java:216) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.PollingReceiverWorker.poll(PollingReceiverWorker.java:84) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.PollingReceiverWorker.run(PollingReceiverWorker.java:48) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.TrackingWorkManager$TrackeableWork.run(TrackingWorkManager.java:267) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301) ~[mule-core-3.8.5.jar:3.8.5]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_65]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_65]
+Caused by: java.io.IOException: Invalid argument
+	at java.io.WinNTFileSystem.canonicalize0(Native Method) ~[?:1.8.0_65]
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source) ~[?:1.8.0_65]
+	at java.io.File.getCanonicalPath(Unknown Source) ~[?:1.8.0_65]
+	at java.io.File.getCanonicalFile(Unknown Source) ~[?:1.8.0_65]
+	at org.mule.util.FileUtils.newFile(FileUtils.java:440) ~[mule-core-3.8.5.jar:3.8.5]
+	... 10 more
+2017-08-08 20:01:40,913 [[filetransferdemo].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: C:\Java\SamplePrograms\Hello.java
+2017-08-08 20:01:40,913 [[filetransferdemo].connector.file.mule.default.receiver.01] ERROR org.mule.exception.DefaultSystemExceptionStrategy - Caught exception in Exception Strategy: Unable to create a canonical file for parent: C:\Java\output and child: *.*
+org.mule.api.MuleRuntimeException: Unable to create a canonical file for parent: C:\Java\output and child: *.*
+	at org.mule.util.FileUtils.newFile(FileUtils.java:444) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.file.FileMessageReceiver.processFile(FileMessageReceiver.java:344) ~[mule-transport-file-3.8.5.jar:3.8.5]
+	at org.mule.transport.file.FileMessageReceiver.poll(FileMessageReceiver.java:246) ~[mule-transport-file-3.8.5.jar:3.8.5]
+	at org.mule.transport.AbstractPollingMessageReceiver.performPoll(AbstractPollingMessageReceiver.java:216) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.PollingReceiverWorker.poll(PollingReceiverWorker.java:84) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.PollingReceiverWorker.run(PollingReceiverWorker.java:48) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.TrackingWorkManager$TrackeableWork.run(TrackingWorkManager.java:267) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301) ~[mule-core-3.8.5.jar:3.8.5]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_65]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_65]
+Caused by: java.io.IOException: Invalid argument
+	at java.io.WinNTFileSystem.canonicalize0(Native Method) ~[?:1.8.0_65]
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source) ~[?:1.8.0_65]
+	at java.io.File.getCanonicalPath(Unknown Source) ~[?:1.8.0_65]
+	at java.io.File.getCanonicalFile(Unknown Source) ~[?:1.8.0_65]
+	at org.mule.util.FileUtils.newFile(FileUtils.java:440) ~[mule-core-3.8.5.jar:3.8.5]
+	... 10 more
+2017-08-08 20:01:43,513 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.filetransferdemo:type=Endpoint,service="filetransferdemoFlow",connector=connector.file.mule.default,name="endpoint..C.Java.SamplePrograms"
+2017-08-08 20:01:43,514 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.filetransferdemo:type=Endpoint,service="filetransferdemoFlow",connector=connector.file.mule.default,name="endpoint..C.Java.SamplePrograms"
+2017-08-08 20:01:43,516 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.filetransferdemo:type=Connector,name="connector.file.mule.default"
+2017-08-08 20:01:43,522 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: filetransferdemo                                      *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-08-08 20:02:58,983 [[filetransferdemo].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: C:\Java\SamplePrograms\Hello.class
+2017-08-08 20:02:58,984 [[filetransferdemo].connector.file.mule.default.receiver.01] ERROR org.mule.exception.DefaultSystemExceptionStrategy - Caught exception in Exception Strategy: Unable to create a canonical file for parent: C:\Java\output and child: *.*
+org.mule.api.MuleRuntimeException: Unable to create a canonical file for parent: C:\Java\output and child: *.*
+	at org.mule.util.FileUtils.newFile(FileUtils.java:444) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.file.FileMessageReceiver.processFile(FileMessageReceiver.java:344) ~[mule-transport-file-3.8.5.jar:3.8.5]
+	at org.mule.transport.file.FileMessageReceiver.poll(FileMessageReceiver.java:246) ~[mule-transport-file-3.8.5.jar:3.8.5]
+	at org.mule.transport.AbstractPollingMessageReceiver.performPoll(AbstractPollingMessageReceiver.java:216) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.PollingReceiverWorker.poll(PollingReceiverWorker.java:84) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.PollingReceiverWorker.run(PollingReceiverWorker.java:48) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.TrackingWorkManager$TrackeableWork.run(TrackingWorkManager.java:267) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301) ~[mule-core-3.8.5.jar:3.8.5]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_65]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_65]
+Caused by: java.io.IOException: Invalid argument
+	at java.io.WinNTFileSystem.canonicalize0(Native Method) ~[?:1.8.0_65]
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source) ~[?:1.8.0_65]
+	at java.io.File.getCanonicalPath(Unknown Source) ~[?:1.8.0_65]
+	at java.io.File.getCanonicalFile(Unknown Source) ~[?:1.8.0_65]
+	at org.mule.util.FileUtils.newFile(FileUtils.java:440) ~[mule-core-3.8.5.jar:3.8.5]
+	... 10 more
+2017-08-08 20:02:59,984 [[filetransferdemo].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: C:\Java\SamplePrograms\Hello.java
+2017-08-08 20:02:59,985 [[filetransferdemo].connector.file.mule.default.receiver.01] ERROR org.mule.exception.DefaultSystemExceptionStrategy - Caught exception in Exception Strategy: Unable to create a canonical file for parent: C:\Java\output and child: *.*
+org.mule.api.MuleRuntimeException: Unable to create a canonical file for parent: C:\Java\output and child: *.*
+	at org.mule.util.FileUtils.newFile(FileUtils.java:444) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.file.FileMessageReceiver.processFile(FileMessageReceiver.java:344) ~[mule-transport-file-3.8.5.jar:3.8.5]
+	at org.mule.transport.file.FileMessageReceiver.poll(FileMessageReceiver.java:246) ~[mule-transport-file-3.8.5.jar:3.8.5]
+	at org.mule.transport.AbstractPollingMessageReceiver.performPoll(AbstractPollingMessageReceiver.java:216) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.PollingReceiverWorker.poll(PollingReceiverWorker.java:84) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.PollingReceiverWorker.run(PollingReceiverWorker.java:48) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.transport.TrackingWorkManager$TrackeableWork.run(TrackingWorkManager.java:267) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301) ~[mule-core-3.8.5.jar:3.8.5]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_65]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_65]
+Caused by: java.io.IOException: Invalid argument
+	at java.io.WinNTFileSystem.canonicalize0(Native Method) ~[?:1.8.0_65]
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source) ~[?:1.8.0_65]
+	at java.io.File.getCanonicalPath(Unknown Source) ~[?:1.8.0_65]
+	at java.io.File.getCanonicalFile(Unknown Source) ~[?:1.8.0_65]
+	at org.mule.util.FileUtils.newFile(FileUtils.java:440) ~[mule-core-3.8.5.jar:3.8.5]
+	... 10 more
+2017-08-08 20:04:13,633 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'filetransferdemo'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:04:13,638 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: filetransferdemoFlow
+2017-08-08 20:04:13,638 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///C:/Java/SamplePrograms/
+2017-08-08 20:04:13,639 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2017-08-08 20:04:13,640 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2017-08-08 20:04:13,641 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: filetransferdemoFlow.stage1
+2017-08-08 20:04:13,694 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2017-08-08 20:04:13,698 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2017-08-08 20:04:13,705 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2017-08-08 20:04:13,705 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2017-08-08 20:04:13,709 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'filetransferdemo'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:04:13,710 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2017-08-08 20:04:13,712 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: filetransferdemoFlow
+2017-08-08 20:04:13,713 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: filetransferdemoFlow.stage1
+2017-08-08 20:04:13,717 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2017-08-08 20:04:13,721 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=42a0501e
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-08-08 20:04:13,722 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2017-08-08 20:04:13,895 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@ca27722: startup date [Tue Aug 08 20:01:32 IST 2017]; root of context hierarchy
+2017-08-08 20:04:13,971 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "filetransferdemo" shut down normally on: 8/8/17 8:04  *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 2 mins, 35.370 sec                        *
+**********************************************************************
+2017-08-08 20:04:14,156 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'filetransferdemo'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:04:14,164 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app filetransferdemo
+2017-08-08 20:04:14,175 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-08-08 20:04:14,189 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-08-08 20:04:14,221 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-08-08 20:04:14,222 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-08-08 20:04:14,231 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@184cdd73: startup date [Tue Aug 08 20:04:14 IST 2017]; root of context hierarchy
+2017-08-08 20:04:14,879 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-08-08 20:04:15,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-tx-log\tx1.log and C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-tx-log\tx2.log
+2017-08-08 20:04:15,171 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-xa-tx-log\tx1.log and C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-xa-tx-log\tx2.log
+2017-08-08 20:04:15,176 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2017-08-08 20:04:15,221 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-08-08 20:04:15,224 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: filetransferdemoFlow
+2017-08-08 20:04:15,224 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6b6b95ce
+2017-08-08 20:04:15,232 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: filetransferdemoFlow.stage1
+2017-08-08 20:04:15,282 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\apps\filetransferdemo\filetransferdemo.xml'}]"
+2017-08-08 20:04:15,282 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\apps\filetransferdemo\filetransferdemo.xml'}]"
+2017-08-08 20:04:15,294 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'filetransferdemo'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:04:15,299 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-08-08 20:04:15,304 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-08-08 20:04:15,327 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3f7f7182
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-08-08 20:04:15,328 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3f7f7182
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-08-08 20:04:15,329 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2017-08-08 20:04:15,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:04:15,340 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-08-08 20:04:15,345 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: filetransferdemoFlow
+2017-08-08 20:04:15,346 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: filetransferdemoFlow.stage1
+2017-08-08 20:04:15,372 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: filetransferdemoFlow on endpointUri: file:///C:/Java/SamplePrograms/
+2017-08-08 20:04:15,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2017-08-08 20:04:15,387 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2017-08-08 20:04:15,389 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2017-08-08 20:04:15,389 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2017-08-08 20:04:15,391 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-08-08 20:04:15,398 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.filetransferdemo:type=Endpoint,service="filetransferdemoFlow",connector=connector.file.mule.default,name="endpoint..C.Java.SamplePrograms"
+2017-08-08 20:04:15,399 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.filetransferdemo:type=Endpoint,service="filetransferdemoFlow",connector=connector.file.mule.default,name="endpoint..C.Java.SamplePrograms"
+2017-08-08 20:04:15,410 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.filetransferdemo:type=Connector,name="connector.file.mule.default"
+2017-08-08 20:04:15,412 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: filetransferdemo                                      *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-08-08 20:04:16,391 [[filetransferdemo].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: C:\Java\SamplePrograms\Hello.class
+2017-08-08 20:04:16,433 [[filetransferdemo].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: C:\Java\SamplePrograms\Hello.java
+2017-08-08 20:04:16,442 [[filetransferdemo].filetransferdemoFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - File Transfer Started
+2017-08-08 20:04:16,442 [[filetransferdemo].filetransferdemoFlow.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - File Transfer Started
+2017-08-08 20:04:16,494 [[filetransferdemo].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.845115234'. Object is: FileMessageDispatcher
+2017-08-08 20:04:16,494 [[filetransferdemo].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.622864805'. Object is: FileMessageDispatcher
+2017-08-08 20:04:16,494 [[filetransferdemo].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.622864805'. Object is: FileMessageDispatcher
+2017-08-08 20:04:16,494 [[filetransferdemo].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.845115234'. Object is: FileMessageDispatcher
+2017-08-08 20:04:16,522 [[filetransferdemo].connector.file.mule.default.dispatcher.02] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Failed to route event via endpoint: DefaultOutboundEndpoint{endpointUri=file:///C:/Java/output/, connector=FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=start
+  this=3f7f7182
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+,  name='endpoint..C.Java.output', mep=ONE_WAY, properties={outputPattern=*.*}, transactionConfig=Transaction{factory=null, action=INDIFFERENT, timeout=0}, deleteUnacceptedMessages=false, initialState=started, responseTimeout=10000, endpointEncoding=UTF-8, disableTransportTransformer=false}.
+Payload               : org.mule.transport.file.ReceiverFileInputStream@7541707c
+Element               : /filetransferdemoFlow/processors/1 @ filetransferdemo:filetransferdemo.xml:12 (DestinationFilePath)
+Element XML           : <file:outbound-endpoint path="C:\Java\output" outputPattern="*.*" responseTimeout="10000" doc:name="DestinationFilePath"></file:outbound-endpoint>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.io.IOException: Invalid argument
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at java.io.File.getCanonicalFile(Unknown Source)
+	at org.mule.util.FileUtils.newFile(FileUtils.java:367)
+	at org.mule.util.FileUtils.createFile(FileUtils.java:93)
+	at org.mule.transport.file.FileConnector.getOutputStream(FileConnector.java:559)
+	at org.mule.transport.file.FileMessageDispatcher.doDispatch(FileMessageDispatcher.java:55)
+	at org.mule.transport.AbstractMessageDispatcher.process(AbstractMessageDispatcher.java:109)
+	at org.mule.transport.AbstractConnector$DispatcherMessageProcessor.process(AbstractConnector.java:2735)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.processNextTimed(AsyncInterceptingMessageProcessor.java:129)
+	at org.mule.processor.AsyncInterceptingMessageProcessor$AsyncMessageProcessorWorker$1.process(AsyncInterceptingMessageProcessor.java:213)
+	at org.mule.processor.AsyncInterceptingMessageProcessor$AsyncMessageProcessorWorker$1.process(AsyncInterceptingMessageProcessor.java:206)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:30)
+	at org.mule.processor.AsyncInterceptingMessageProcessor$AsyncMessageProcessorWorker.doRun(AsyncInterceptingMessageProcessor.java:205)
+	at org.mule.work.AbstractMuleEventWork.run(AbstractMuleEventWork.java:53)
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+********************************************************************************
+
+2017-08-08 20:04:16,541 [[filetransferdemo].connector.file.mule.default.dispatcher.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Failed to route event via endpoint: DefaultOutboundEndpoint{endpointUri=file:///C:/Java/output/, connector=FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=start
+  this=3f7f7182
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+,  name='endpoint..C.Java.output', mep=ONE_WAY, properties={outputPattern=*.*}, transactionConfig=Transaction{factory=null, action=INDIFFERENT, timeout=0}, deleteUnacceptedMessages=false, initialState=started, responseTimeout=10000, endpointEncoding=UTF-8, disableTransportTransformer=false}.
+Payload               : org.mule.transport.file.ReceiverFileInputStream@278e4b0
+Element               : /filetransferdemoFlow/processors/1 @ filetransferdemo:filetransferdemo.xml:12 (DestinationFilePath)
+Element XML           : <file:outbound-endpoint path="C:\Java\output" outputPattern="*.*" responseTimeout="10000" doc:name="DestinationFilePath"></file:outbound-endpoint>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.io.IOException: Invalid argument
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at java.io.File.getCanonicalFile(Unknown Source)
+	at org.mule.util.FileUtils.newFile(FileUtils.java:367)
+	at org.mule.util.FileUtils.createFile(FileUtils.java:93)
+	at org.mule.transport.file.FileConnector.getOutputStream(FileConnector.java:559)
+	at org.mule.transport.file.FileMessageDispatcher.doDispatch(FileMessageDispatcher.java:55)
+	at org.mule.transport.AbstractMessageDispatcher.process(AbstractMessageDispatcher.java:109)
+	at org.mule.transport.AbstractConnector$DispatcherMessageProcessor.process(AbstractConnector.java:2735)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.processNextTimed(AsyncInterceptingMessageProcessor.java:129)
+	at org.mule.processor.AsyncInterceptingMessageProcessor$AsyncMessageProcessorWorker$1.process(AsyncInterceptingMessageProcessor.java:213)
+	at org.mule.processor.AsyncInterceptingMessageProcessor$AsyncMessageProcessorWorker$1.process(AsyncInterceptingMessageProcessor.java:206)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:30)
+	at org.mule.processor.AsyncInterceptingMessageProcessor$AsyncMessageProcessorWorker.doRun(AsyncInterceptingMessageProcessor.java:205)
+	at org.mule.work.AbstractMuleEventWork.run(AbstractMuleEventWork.java:53)
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+********************************************************************************
+
+2017-08-08 20:04:34,507 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'filetransferdemo'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:04:35,071 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-08-08 20:04:35,320 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-08-08 20:04:35,545 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-08-08 20:04:35,606 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-08-08 20:04:35,758 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@9573b3b: startup date [Tue Aug 08 20:04:35 IST 2017]; root of context hierarchy
+2017-08-08 20:04:37,881 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-08-08 20:04:39,355 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-08-08 20:04:39,684 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-tx-log\tx1.log and C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-tx-log\tx2.log
+2017-08-08 20:04:39,719 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-xa-tx-log\tx1.log and C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-xa-tx-log\tx2.log
+2017-08-08 20:04:39,727 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2017-08-08 20:04:39,959 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-08-08 20:04:39,966 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: filetransferdemoFlow
+2017-08-08 20:04:39,967 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5d4e13e1
+2017-08-08 20:04:39,993 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: filetransferdemoFlow.stage1
+2017-08-08 20:04:41,241 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\apps\filetransferdemo\filetransferdemo.xml'}]"
+2017-08-08 20:04:41,241 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\apps\filetransferdemo\filetransferdemo.xml'}]"
+2017-08-08 20:04:41,283 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'filetransferdemo'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:04:41,290 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-08-08 20:04:41,291 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-08-08 20:04:41,367 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6ca8fcf3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-08-08 20:04:41,367 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6ca8fcf3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-08-08 20:04:41,368 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2017-08-08 20:04:41,374 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:04:41,378 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-08-08 20:04:41,384 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: filetransferdemoFlow
+2017-08-08 20:04:41,386 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: filetransferdemoFlow.stage1
+2017-08-08 20:04:41,493 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: filetransferdemoFlow on endpointUri: file:///C:/Java/SamplePrograms/
+2017-08-08 20:04:41,553 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2017-08-08 20:04:41,573 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2017-08-08 20:04:41,577 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2017-08-08 20:04:41,579 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2017-08-08 20:04:41,606 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-08-08 20:04:46,199 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.filetransferdemo:type=Endpoint,service="filetransferdemoFlow",connector=connector.file.mule.default,name="endpoint..C.Java.SamplePrograms"
+2017-08-08 20:04:46,199 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.filetransferdemo:type=Endpoint,service="filetransferdemoFlow",connector=connector.file.mule.default,name="endpoint..C.Java.SamplePrograms"
+2017-08-08 20:04:46,203 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.filetransferdemo:type=Connector,name="connector.file.mule.default"
+2017-08-08 20:04:46,207 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: filetransferdemo                                      *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-08-08 20:08:42,814 [[filetransferdemo].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: C:\Java\SamplePrograms\Hello.txt
+2017-08-08 20:08:42,872 [[filetransferdemo].filetransferdemoFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - File Transfer Started
+2017-08-08 20:08:42,906 [[filetransferdemo].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1347856429'. Object is: FileMessageDispatcher
+2017-08-08 20:08:42,906 [[filetransferdemo].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1347856429'. Object is: FileMessageDispatcher
+2017-08-08 20:08:42,933 [[filetransferdemo].connector.file.mule.default.dispatcher.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Failed to route event via endpoint: DefaultOutboundEndpoint{endpointUri=file:///C:/Java/output/, connector=FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=start
+  this=6ca8fcf3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+,  name='endpoint..C.Java.output', mep=ONE_WAY, properties={outputPattern=*.*}, transactionConfig=Transaction{factory=null, action=INDIFFERENT, timeout=0}, deleteUnacceptedMessages=false, initialState=started, responseTimeout=10000, endpointEncoding=UTF-8, disableTransportTransformer=false}.
+Payload               : org.mule.transport.file.ReceiverFileInputStream@730cdb6
+Element               : /filetransferdemoFlow/processors/1 @ filetransferdemo:filetransferdemo.xml:12 (DestinationFilePath)
+Element XML           : <file:outbound-endpoint path="C:\Java\output" outputPattern="*.*" responseTimeout="10000" doc:name="DestinationFilePath"></file:outbound-endpoint>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.io.IOException: Invalid argument
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at java.io.File.getCanonicalFile(Unknown Source)
+	at org.mule.util.FileUtils.newFile(FileUtils.java:367)
+	at org.mule.util.FileUtils.createFile(FileUtils.java:93)
+	at org.mule.transport.file.FileConnector.getOutputStream(FileConnector.java:559)
+	at org.mule.transport.file.FileMessageDispatcher.doDispatch(FileMessageDispatcher.java:55)
+	at org.mule.transport.AbstractMessageDispatcher.process(AbstractMessageDispatcher.java:109)
+	at org.mule.transport.AbstractConnector$DispatcherMessageProcessor.process(AbstractConnector.java:2735)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.processNextTimed(AsyncInterceptingMessageProcessor.java:129)
+	at org.mule.processor.AsyncInterceptingMessageProcessor$AsyncMessageProcessorWorker$1.process(AsyncInterceptingMessageProcessor.java:213)
+	at org.mule.processor.AsyncInterceptingMessageProcessor$AsyncMessageProcessorWorker$1.process(AsyncInterceptingMessageProcessor.java:206)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:30)
+	at org.mule.processor.AsyncInterceptingMessageProcessor$AsyncMessageProcessorWorker.doRun(AsyncInterceptingMessageProcessor.java:205)
+	at org.mule.work.AbstractMuleEventWork.run(AbstractMuleEventWork.java:53)
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+********************************************************************************
+
+2017-08-08 20:10:26,429 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'filetransferdemo'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:10:26,431 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: filetransferdemoFlow
+2017-08-08 20:10:26,431 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///C:/Java/SamplePrograms/
+2017-08-08 20:10:26,432 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2017-08-08 20:10:26,434 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2017-08-08 20:10:26,434 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: filetransferdemoFlow.stage1
+2017-08-08 20:10:26,512 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2017-08-08 20:10:26,514 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2017-08-08 20:10:26,517 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.file.mule.default.dispatcher.1347856429'. Object is: FileMessageDispatcher
+2017-08-08 20:10:26,517 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.file.mule.default.dispatcher.1347856429'. Object is: FileMessageDispatcher
+2017-08-08 20:10:26,519 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2017-08-08 20:10:26,519 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2017-08-08 20:10:26,528 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'filetransferdemo'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:10:26,530 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2017-08-08 20:10:26,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: filetransferdemoFlow
+2017-08-08 20:10:26,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: filetransferdemoFlow.stage1
+2017-08-08 20:10:26,536 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2017-08-08 20:10:26,538 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=6ca8fcf3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-08-08 20:10:26,541 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2017-08-08 20:10:26,779 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@9573b3b: startup date [Tue Aug 08 20:04:35 IST 2017]; root of context hierarchy
+2017-08-08 20:10:26,794 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "filetransferdemo" shut down normally on: 8/8/17 8:10  *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 5 mins, 45.504 sec                        *
+**********************************************************************
+2017-08-08 20:10:27,198 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'filetransferdemo'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:10:27,210 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app filetransferdemo
+2017-08-08 20:10:27,216 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-08-08 20:10:27,226 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-08-08 20:10:27,253 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-08-08 20:10:27,257 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-08-08 20:10:27,265 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@da7b0de: startup date [Tue Aug 08 20:10:27 IST 2017]; root of context hierarchy
+2017-08-08 20:10:27,813 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-08-08 20:10:28,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-tx-log\tx1.log and C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-tx-log\tx2.log
+2017-08-08 20:10:28,065 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-xa-tx-log\tx1.log and C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\.\.mule\filetransferdemo\queue-xa-tx-log\tx2.log
+2017-08-08 20:10:28,076 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2017-08-08 20:10:28,183 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-08-08 20:10:28,186 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: filetransferdemoFlow
+2017-08-08 20:10:28,191 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@773b15e0
+2017-08-08 20:10:28,198 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: filetransferdemoFlow.stage1
+2017-08-08 20:10:28,263 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\apps\filetransferdemo\filetransferdemo.xml'}]"
+2017-08-08 20:10:28,266 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Sneha Vihaari\AnypointStudio\workspace\.mule\apps\filetransferdemo\filetransferdemo.xml'}]"
+2017-08-08 20:10:28,272 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'filetransferdemo'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:10:28,279 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-08-08 20:10:28,280 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-08-08 20:10:28,308 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6b82f9ef
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-08-08 20:10:28,308 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6b82f9ef
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-08-08 20:10:28,308 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2017-08-08 20:10:28,311 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-08-08 20:10:28,316 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-08-08 20:10:28,317 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: filetransferdemoFlow
+2017-08-08 20:10:28,317 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: filetransferdemoFlow.stage1
+2017-08-08 20:10:28,345 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: filetransferdemoFlow on endpointUri: file:///C:/Java/SamplePrograms/
+2017-08-08 20:10:28,360 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2017-08-08 20:10:28,365 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2017-08-08 20:10:28,370 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2017-08-08 20:10:28,370 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2017-08-08 20:10:28,377 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-08-08 20:10:28,383 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.filetransferdemo:type=Endpoint,service="filetransferdemoFlow",connector=connector.file.mule.default,name="endpoint..C.Java.SamplePrograms"
+2017-08-08 20:10:28,383 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.filetransferdemo:type=Endpoint,service="filetransferdemoFlow",connector=connector.file.mule.default,name="endpoint..C.Java.SamplePrograms"
+2017-08-08 20:10:28,386 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.filetransferdemo:type=Connector,name="connector.file.mule.default"
+2017-08-08 20:10:28,397 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: filetransferdemo                                      *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-08-08 20:11:34,426 [[filetransferdemo].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: C:\Java\SamplePrograms\Hello.txt.txt
+2017-08-08 20:11:34,429 [[filetransferdemo].filetransferdemoFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - File Transfer Started
+2017-08-08 20:11:34,434 [[filetransferdemo].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1309769397'. Object is: FileMessageDispatcher
+2017-08-08 20:11:34,434 [[filetransferdemo].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1309769397'. Object is: FileMessageDispatcher
+2017-08-08 20:11:34,438 [[filetransferdemo].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Java\output\Hello.txt.txt
